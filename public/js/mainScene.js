@@ -11,6 +11,7 @@ export default class MainScene extends Phaser.Scene {
         this.load.image('headDown', 'img/HeadDown.png');
         this.load.image('headLeft', 'img/HeadLeft.png');
         this.load.image('body', 'img/SnakeBody.png');
+        this.load.image('apple', 'img/Apple.png');
     }
 
     create() {

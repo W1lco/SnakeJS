@@ -8,7 +8,7 @@ export default class Snake {
         this.direction = Phaser.Math.Vector2.RIGHT;
         this.body = [];
         this.body.push(this.scene.add.sprite(this.tileSize, this.tileSize, 'headRight').setOrigin(0));
-        this.apple = this.scene.add.rectangle(5*this.tileSize, 5*this.tileSize, this.tileSize, this.tileSize,0x00ff00).setOrigin(0);
+        this.apple = this.scene.add.sprite(this.tileSize, this.tileSize, 'apple').setOrigin(0);
         this.positionApple();
         scene.input.keyboard.on('keydown', e => {this.keyDown(e)})
     }
